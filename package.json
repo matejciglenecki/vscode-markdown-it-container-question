@@ -1,7 +1,7 @@
 {
-	"name": "markdown-it-custom-container",
-	"displayName": "markdown-it customizable container",
-	"description": "Create expressive markdown-it containers for VSCode's markdown preview",
+	"name": "markdown-it-container-question",
+	"displayName": "markdown-it-container-question",
+	"description": "",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.52.0"
@@ -9,17 +9,14 @@
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"onCommand:markdown-it-custom-container.helloWorld"
-	],
+	"activationEvents": [],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "markdown-it-custom-container.helloWorld",
-				"title": "Hello World"
-			}
-		]
+		"markdown.markdownItPlugins": true,
+		"configuration": {
+			"title": "TypeScript",
+			"teadgfs": "1"
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -30,16 +27,22 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.52.0",
 		"@types/glob": "^7.1.3",
+		"@types/markdown-it": "^12.0.0",
 		"@types/mocha": "^8.0.4",
 		"@types/node": "^12.11.7",
-		"eslint": "^7.15.0",
+		"@types/vscode": "^1.52.0",
 		"@typescript-eslint/eslint-plugin": "^4.9.0",
 		"@typescript-eslint/parser": "^4.9.0",
+		"eslint": "^7.15.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.1.3",
 		"typescript": "^4.1.2",
 		"vscode-test": "^1.4.1"
+	},
+	"dependencies": {
+		"@types/markdown-it-container": "^2.0.3",
+		"markdown-it": "^12.0.4",
+		"markdown-it-container": "^3.0.0"
 	}
 }

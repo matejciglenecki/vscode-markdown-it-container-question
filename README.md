@@ -1,6 +1,6 @@
-# markdown-it-custom-container README
+# markdown-it-container-question README
 
-This is the README for your extension "markdown-it-custom-container". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "markdown-it-container-question". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
