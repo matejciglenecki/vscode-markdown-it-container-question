@@ -44,5 +44,6 @@
 		"@types/markdown-it-container": "^2.0.3",
 		"markdown-it": "^12.0.4",
 		"markdown-it-container": "^3.0.0"
-	}
+	},
+	"publisher": "Matej Ciglenečki"
 }
