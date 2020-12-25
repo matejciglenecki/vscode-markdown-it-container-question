@@ -1,65 +1,53 @@
 # markdown-it-container-question README
 
-This is the README for your extension "markdown-it-container-question". After writing up a brief description, we recommend including the following sections.
+## What is this?
+
+VSCode extension that converts infamous markdown snippet:
+
+```html
+<details>
+<summary>What's your question?</summary>
+...this is hidden, collapsable content...
+</details>
+```
+
+to the following:
+
+```
+::: q What's your question?
+...this is hidden, collapsable content...
+:::
+```
+
+<details>
+<summary>What's your question?</summary>
+...this is hidden, collapsable content...
+</details>
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+`question` and `answer` classes are added to html elements. Use your own `style.css` to make questions and answer prettier.
 
-For example if there is an image subfolder under your extension project workspace:
+Add style for markdown in VSCode JSON settings:
+```
+"markdown.styles": ["/path/to/style.css"]
+```
 
-\!\[feature X\]\(images/feature-x.png\)
+or
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+```
+"markdown.styles": ["./relativepath/to/style.css"]
+```
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+E.g. of `style.css`
+```
+.answer {
+  margin: 1em 0em 0em 3em;
+  padding-left: 1em;
+  border-left: 3px solid rgba(0, 0, 0, 0.2);
+  display: block;
+}
+.question {
+  color: red;
+}
+```
