@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext) {
           if (tokens[idx].nesting === 1) {
             const m = tokens[idx].info.trim().match(ARG_REG);
             const title = md.utils.escapeHtml(m[1]);
-            return `<details>` + `<summary class="question">` + title + '</summary>' + `<span class="answer">'` + `\n`;
+            return `<details>` + `<summary class="question">` + title + `</summary>` + `<span class="answer">` + `\n`;
           } else {
             return '</span></details>\n';
           }
