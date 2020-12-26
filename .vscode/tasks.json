@@ -32,10 +32,7 @@
 			"problemMatcher": [],
 			"label": "npm: vscode:prepublish",
 			"detail": "npm run compile",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
+			"group": "build"
 		}
 	]
 }

@@ -45,5 +45,8 @@
 		"markdown-it": "^12.0.4",
 		"markdown-it-container": "^3.0.0"
 	},
-	"publisher": "MatejCiglenecki"
+	"publisher": "MatejCiglenecki",
+	"repository": {
+		"url": "https://github.com/matejciglenecki/vscode-markdown-it-container-question"
+	}
 }
