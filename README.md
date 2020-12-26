@@ -2,7 +2,7 @@
 
 ## What is this?
 
-VSCode extension that converts infamous markdown snippet:
+**HARDCODED** VSCode extension that converts infamous markdown snippet:
 
 ```html
 <details>
