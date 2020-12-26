@@ -19,6 +19,7 @@ to the following:
 :::
 ```
 
+Live action:
 <details>
 <summary>What's your question?</summary>
 ...this is hidden, collapsable content...
