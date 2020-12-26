@@ -27,7 +27,7 @@ Live action:
 
 ## Features
 
-`question` and `answer` classes are added to html elements. Use your own `style.css` to make questions and answer prettier.
+`question` and `answer` CSS classes are added to html elements. Use your own `style.css` to make questions and answer prettier.
 
 Add style for markdown in VSCode JSON settings:
 ```
