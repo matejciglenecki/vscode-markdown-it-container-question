@@ -2,7 +2,15 @@
 
 ## What is this?
 
-**HARDCODED** VSCode extension that converts infamous markdown snippet:
+**HARDCODED** VSCode extension that creates a following syntax in Markdown:
+
+```
+::: q What's your question?
+this is hidden, collapsable content.
+:::
+```
+
+and produces the infamous HTML snippet:
 
 ```html
 <details>
@@ -11,23 +19,15 @@
 </details>
 ```
 
-to the following:
-
-```
-::: q What's your question?
-...this is hidden, collapsable content...
-:::
-```
-
-Example of `<details><summary>...`:
+Check how `<details><summary>...` snippet behaves in action:
 <details>
 <summary>What's your question?</summary>
-...this is hidden, collapsable content...
+this is hidden, collapsable content.
 </details>
 
 ## Features
 
-`question` and `answer` CSS classes are added to html elements. Use your own `style.css` to make questions and answer prettier.
+`question` and `answer` are CSS classes added to HTML elements. Use your own `style.css` to make questions and answer prettier.
 
 Add style for markdown in VSCode JSON settings:
 
