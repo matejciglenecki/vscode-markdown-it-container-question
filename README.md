@@ -27,7 +27,7 @@ this is hidden, collapsable content.
 
 ## Features
 
-`question` and `answer` are CSS classes added to HTML elements. Use your own `style.css` to make questions and answer prettier.
+`question` and `answer` are names of CSS classes assigned to HTML elements. Use your own `style.css` to make questions and answer prettier.
 
 Add style for markdown in VSCode JSON settings:
 
