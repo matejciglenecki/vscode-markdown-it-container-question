@@ -19,7 +19,7 @@ to the following:
 :::
 ```
 
-Live action:
+Example of `<details><summary>...`:
 <details>
 <summary>What's your question?</summary>
 ...this is hidden, collapsable content...
