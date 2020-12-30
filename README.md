@@ -31,7 +31,7 @@ Example of `<details><summary>...`:
 
 Add style for markdown in VSCode JSON settings:
 ```
-"markdown.styles": ["/path/to/style.css"]
+~~"markdown.styles": ["/path/to/style.css"]~~
 ```
 
 or
